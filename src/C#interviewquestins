@@ -1,0 +1,96 @@
+------C#---
+
+
+DataType :
+Value data Types:  int bool float chr(PRE DEFINED) enumeration ,structure(user defined)
+Pointer:
+Reference Data Types: object string(pre) class interface(user defined)
+----------------------
+Switch :
+The switch is a keyword in the C# language, and by using this switch keyword we can create
+ selection statements with multiple blocks. 
+And the Multiple blocks can be constructed by using the case keyword.
+------------------------
+The BREAK 
+statement terminates the loop, whereas the 
+CONTINUE statement skips only the current loop iteration, and allows the next loop iteration to proceed.
+The continue statement is almost always used with the if…else statement.
+--------------------------
+Function:
+A function is a group of related instructions that performs a specific task
+ Functions take some input as parameters and return the result as a return value
+Built-in Functions:Sqrt function
+User-Defined Functions
+--------------------------
+Call by Value and Call by Reference in C#:
+Primitive data types like int, char, double, etc
+Reference Data Type (class, interface, delegate, string, etc.)
+If you want to achieve Call by Reference in C#, you must have to use either the out or ref keyword, 
+regardless of whether the argument type is a value type or a reference type
+In the Call by value method original value is not modified, whereas in the Call by reference method, the original value is modified.
+In Call by value, a copy of the variable is passed, whereas in Call by reference, a variable itself is passed.
+In Call by value, actual and formal arguments will be created in different memory locations, whereas in Call by reference, 
+actual and formal arguments will be created in the same memory location.
+--------------------------------------------
+constant and readonly?
+The Constants variables are the immutable values that are known at the time of program compilation and do not change their values for the lifetime of the program.
+ The Read-only variables are also immutable values but these values are known at runtime and also do not change their values for the life of the program
+---------------------------
+
+
+property:
+A Property in C# is a member of a class that is used to set and get the data from a data field (i.e. variable) of a class. The most 
+important point that you need to remember is that a property in C# is never used to store any data, it just acts as an interface or medium to transfer the data
+.-----------------------
+
+Convert.ToString and ToString Method in C#
+Both these methods are used to convert a value to a string. The difference is Convert.ToString() method handles null whereas the ToString() doesn’t handle null in C#.
+-----------------------------
+stack and heap mempry:
+he heap memory location does not track running memory. Heap is used for dynamic memory allocation
+static mempry:stack
+dynamic:heap
+Now, let us move forward and understand the concept value types and reference types in detail. The Value types are the types that hold both data and memory in the same location.
+ On the other hand, a reference type is a type that has a pointer that points to the actual memory location.
+
+-----------------------------------
+boxing and unboxing:
+ Boxing means you basically set a value type to a reference type and unboxing means you basically set a reference type to a value type.
+-------------------------------
+constructor:
+The Constructors are responsible for two things. One is the object initialization and the other one is memory allocation. 
+The role of the new keyword is to create the object and the role of the constructor is to initialize the variables.
+-----------------------
+What is the need of Defining a Constructor Explicitly Again?
+Implicit Constructors of a class will initialize variables of a class with the same value even if we create multiple instances of that class
+If we define constructors explicitly with parameters then we will get a chance of initializing the fields or variables of the class with a new value
+ every time we are going to create the instance of that class
+
+Copy Constructor :
+The constructor which takes a parameter of the class type is called a copy constructor
+The main purpose of the copy constructor is to initialize a new object (instance) with the values of an existing object (instance)
+Static Constructor:
+The static Constructor in C# will be invoked only once. There is no matter how many instances (objects) of the class are created,
+ it is going to be invoked only once and that is when the class is loaded for the first time.
+----------------------------------
+Destructors:Destructors which are also called Finalizers in C# are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector.
+name but prefixed with ~ tilde
+he Constructor in C# is Explicitly called when the object of the class is created. On the other hand, the Destructor in C# is Implicitly Called when the object of the class is destroyed.
+---------------------------
+Garbage collector:
+Garbage Collector is nothing but, it is a feature provided by CLR which helps us to clean or destroy unused managed objects. Cleaning or destroying those unused managed objects basically reclaim the memory.
+Manged and unmageed code:
+The codes which run under the complete control of CLR are called Managed Code in .NET Framework.
+So, in short, the code (EXE, Web App) which not run under the control of CLR is called unmanaged cod
+------------------------------------
+imp infor
+ in general classes, structs, enums, interfaces, and delegates are called types, and variables, properties, constructors, methods, etc. that normally reside within a type are called type members
+
+-------------------------
+inheritence and extension methods difference? 
+These approaches can be used for extending the functionalities of an existing class whereas, in the case of inheritance, we call the methods defined in the old and new classes by using the object of the new class whereas,
+ in the case of extension methods, we call the old and new methods by using the object of the old class.
+-------------------------------
+delegates:
+delegates in C# are the Type-Safe Function Pointer
+It means they hold the reference of a method or function and then call that method for execution.
